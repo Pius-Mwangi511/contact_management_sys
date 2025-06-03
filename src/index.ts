@@ -35,6 +35,7 @@ function updateUser( updatedFields: Partial<User>): void {
     if (user) {
         Object.assign(user, updatedFields);
         saveToLocalStorage();
+        loadFromLocalStorage();
         console.log("User updated:", user);
       } else {
         console.log("User not found");
