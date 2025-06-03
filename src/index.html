@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact management</title>
+    <style>
+        .container{
+            background-color: rgb(30, 30, 71);
+            color: white;
+            height:700px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        label{
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 30px;
+        }
+        input{
+            margin-top: 20px;
+            width: 400px;
+            height: 50px;
+            border-radius: 10px;
+        }
+        
+        button{
+            width: 120px;
+            margin-left: 10px;
+            margin-top: 20px;
+            height: 30px;
+            background-color: rgb(59, 83, 83);
+            border-radius: 10px;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="info">
+            <div class="head">
+                <h1>Contact Management Dashboard</h1>
+            </div>
+            <label for="identity">identity</label><br>
+            <input type="text" id="id" placeholder="id"><br>
+            <label for="name"><b>Name</b></label><br>
+            <input type="text" placeholder="Enter your name" id="name"><br>
+            <label for="contact"><b>Contact</b></label><br>
+            <input type="text" placeholder="Enter your number" id="contact">
+            <div class="buttons">
+                <button id="add" onclick="addContact()">Add</button>
+                <button id="update" onclick="updateUser()">Update</button>
+                <button id="delete" onclick="deleteUser()">Delete</button>
+            </div>
+        </form>
+    </div>
+    <script src="/dist/index.js"> </script>
+</body>
+</html>
